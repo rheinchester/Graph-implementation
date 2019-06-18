@@ -90,7 +90,7 @@ def DFS(graph, start, end, path, shortest, toPrint=False):
     """Assumes graph is a Digraph; start and end are nodes;
           path and shortest are lists of nodes
        Returns a shortest path from start to end in graph"""
-    path = path + [start] #what does this do?, it adds nodes to the list of travelled paths
+    path = path + [start] # it adds nodes to the list of travelled paths
     if toPrint:
         print('Current DFS path:', printPath(path))
     if start == end:
